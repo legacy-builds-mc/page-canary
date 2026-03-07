@@ -3,3 +3,4 @@ download: https://github.com/legacy-builds-mc/build/actions/runs/22784694869/art
 contributors: https://github.com/smartcmd/MinecraftConsoles/graphs/contributors
 here button: https://github.com/smartcmd/MinecraftConsoles?tab=readme-ov-file#multiplayer
 issues: https://github.com/smartcmd/MinecraftConsoles/issues
+suggestions: https://github.com/legacy-builds-mc/page-indev/issues
