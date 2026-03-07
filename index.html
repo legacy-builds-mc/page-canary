@@ -289,6 +289,7 @@
   <div class="nav-links">
     <a id="nav-github" href="#">GitHub</a>
     <a id="nav-contributors" href="#">Contributors</a>
+    <a id="nav-suggestions" href="#">Suggestions</a>
   </div>
 </nav>
 
@@ -377,16 +378,18 @@
       if (!r.ok) return;
       const data = parseData(await r.text());
 
-      const repo    = data['github repo']  || '#';
-      const dl      = data['download']     || '#';
-      const contrib = data['contributors'] || '#';
-      const here    = data['here button']  || '#';
-      const issues  = data['issues']       || '#';
+      const repo        = data['github repo']  || '#';
+      const dl          = data['download']     || '#';
+      const contrib     = data['contributors'] || '#';
+      const here        = data['here button']  || '#';
+      const issues      = data['issues']       || '#';
+      const suggestions = data['suggestions']  || '#';
 
       document.getElementById('btn-download').href        = dl;
       document.getElementById('btn-github').href          = repo;
       document.getElementById('nav-github').href          = repo;
       document.getElementById('nav-contributors').href    = contrib;
+      document.getElementById('nav-suggestions').href     = suggestions;
       document.getElementById('footer-contributors').href = contrib;
       document.getElementById('link-here').href           = here;
       document.getElementById('footer-issues').href       = issues;
